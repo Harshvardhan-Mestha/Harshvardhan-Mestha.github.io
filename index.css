@@ -61,7 +61,9 @@ body{
     width: 25vh;
     border: 1px solid darkslategray;
     border-radius: 2px;
+    background-color: white;
 }
+
 
 
 #main{
