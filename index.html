@@ -2,12 +2,16 @@
 <html>
 <head>
     <!-- Google tag (gtag.js) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LE52EZP99L"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-LE52EZP99L');
     </script>
     
@@ -16,7 +20,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="header" >
+    <!-- <div id="header" >
 
         <div>
             <a href="/index.html" id="current">about</a>
@@ -26,18 +30,18 @@
             <a href="/projects/projects.html">projects</a>
         </div>
 
-        <!-- <div>
+        <div>
             <a href="repos.html">repos</a>
-        </div> -->
+        </div> 
 
-        <!-- <div>
+        <div>
             <a href="blog.html">blog</a>
-        </div> -->
+        </div>
 
         <div>
             <a href="https://drive.google.com/file/d/17Wzdx0v296bj5wviPpKAayQZhRGCMfur/view">cv</a>
         </div>
-    </div>
+    </div> -->
     
     <div id="main">
         <div id="bio">
@@ -58,103 +62,38 @@
                 </div>
             </div>
         </div>
+
+        <h2>Publications</h2>
         <hr color="coral" width="100%" height="2px">
-        <div id="news">
-            <h2>news</h2>
-            <div class="news_item"><div class="date">2nd October 2024</div> <div>My <a href="https://arxiv.org/pdf/2410.11687">paper</a> with ESML is under review at the <a href="https://iclr.cc/">13th International Conference on Learning Representations</a> !</div></div>
-            <br>
-            <div class="news_item"><div class="date">13th August 2024</div> <div> Joined the <a href="https://github.com/Efficient-Scalable-Machine-Learning">Efficient Scalable Machine Learning (ESML) group</a>  as a research intern ! </div></div>
-            <br>
-            <div class="news_item"><div class="date">30th June 2024</div> <div> Our <a href="https://gram-blogposts.github.io/blog/2024/graphormer/">blogpost</a> on Graphormer accepted at <a href="https://gram-blogposts.github.io/">GRAM Workshop</a> @ ICML 2024. </div></div>
-            <br>
-            <div class="news_item"><div class="date">24th June 2024</div> <div>My <a href="https://drive.google.com/file/d/1QpLhCPE8ZOqzZ1sXsU638UmOWdy8EUmD/view">paper</a> with APPCAIR is under review at the <a href="http://ds2024.isti.cnr.it/">27th International Conference on Discovery Science</a> !</div></div>
-            <br>
-            <div class="news_item"><div class="date">5th June 2024</div> <div>My <a href="https://arxiv.org/pdf/2406.03586">paper</a> is under review at <a href="https://rescience.github.io/write/">ReScience C</a> 2024 !</div></div>
-            <br>
-            <div class="news_item"><div class="date">1st May 2024</div> <div>Will be working at <a href="https://neosalpha.com/">NeosAlpha Technologies</a> as an intern for summer 2024.</div></div>
-            <br>
-            <div class="news_item"><div class="date">30th April 2024</div> <div>Selected for <a href="https://neuromatch.io/courses/">Neuromatch Summer School'24</a> in the Deep Learning Track.</div></div>
-            <br>
-            <div class="news_item"><div class="date">26th March 2024</div> <div>Working at <a href="https://futureofgaming.tech/">FOG Technologies</a> as a Computer Vision intern.</div></div>
-            <br>
-            <div class="news_item"><div class="date">14th December 2023</div> <div>Working at <a href="https://web.bits-pilani.ac.in/APPCAIR/">APPCAIR</a> as a student researcher !</div></div>
-            <br>
-            <div class="news_item"><div class="date">1st October 2023</div>  <div>Only person from our batch to get inducted into <a href="https://www.saidl.in/">SAiDL</a> !</div> </div>
-        </div>
-        <hr color="coral" width="100%" height="2px">
+
         <div id="projs">
-            <h2>projects</h2>
 
             <div class="proj">
                 <!-- js will insert img here -->
-                <img src="assets/demos/gdssm/gdssm.png" class="proj_img"> 
+                
                 <div class="proj_desc">
-                    <h3>State-space models can learn in-context by gradient descent</h3>
-                    <div>
-                        Working on using a novel SSM (State Space Model) architecture for language modeling, by using SSMs to emulate gradient descent, and exploring the mechanisms by which SSMs perform in-context learning. 
-                        Under review at ICLR 2025.                       
-                        <br><br>
-                        Supervisors: <a href="https://scholar.google.com.au/citations?user=zpNTeogAAAAJ&hl=en"> Prof. Anand Subramoney</a> (Royal Holloway, University of London)
+                    <div class="proj_header">State-space models can learn in-context by gradient descent</div><br>
+                    <div class="proj_body">
+                    Working on using a novel SSM (State Space Model) architecture for language modeling, by using SSMs to emulate gradient descent, and exploring the mechanisms by which SSMs perform in-context learning. 
+                    Under review at ICLR 2025.                       
+                    <br><br>
+                    Supervisors: <a href="https://scholar.google.com.au/citations?user=zpNTeogAAAAJ&hl=en"> Prof. Anand Subramoney</a> (Royal Holloway, University of London)
                     </div>
-                    <br>
+
                     <div>[<a href="https://arxiv.org/pdf/2410.11687">preprint</a>]</div>
                 </div>
-            </div>
-
-
-            <div class="proj">
-                <!-- js will insert img here -->
-                <img src="assets/demos/radiolm/radiolm.gif" class="proj_img"> 
-                <div class="proj_desc">
-                    <h3>RadioLM - Radiology Language Model</h3>
-                    <div>
-                        Working on a novel pseudo replacement to RLHF through prompting which also involves creating a modified model with this pseudo-RLHF and then using it to find a Human-window of LLM explanation understandability. We are testing this theory on Radiology/Med students.
-                        <br><br>
-                        Supervisors: <a href="https://scholar.google.com.au/citations?user=zpNTeogAAAAJ&hl=en"> Prof. Ashwin Srinivasan</a>, <a href="https://scholar.google.com.au/citations?user=wVwn-dIAAAAJ&hl=en">Prof. Sidong Liu</a> (Macquarie University, Australia), <a href="https://scholar.google.pt/citations?user=CFkxQ6cAAAAJ&hl=en">Prof. Tanmay Verlekar</a>
-                    </div>
-                    <br>
-                    <!-- <div>[<a href="https://drive.google.com/file/d/1QpLhCPE8ZOqzZ1sXsU638UmOWdy8EUmD/view">preprint</a>]</div> -->
-                </div>
-            </div>
-
             
-            <div class="proj">
-                <!-- js will insert img here -->
-                <img src="assets/demos/countclip/sample.gif" class="proj_img">
-                <div class="proj_desc">
-                    <h3>CountCLIP - [Re] Teaching CLIP to Count to Ten</h3>
-                    <div>I conducted a reproducibility study of the paper <a href="https://arxiv.org/pdf/2302.12066">Teaching CLIP to Count to Ten</a>, published by Google Research, in ICCV 2023.
-                        I implemented the paper from scratch and collected a specialized dataset to facilitate the training.
-                        In addition to this, I carried out further explorations and analysis of the paper, and wrote a paper on my findings which is currently under review at ReScience C 2024.
-                    </div>
-                    <br>
-                    <div>[<a href="https://arxiv.org/pdf/2406.03586">preprint</a>] [<a href="https://github.com/SforAiDl/CountCLIP">code</a>] [<a href="https://zenodo.org/records/10981852">dataset</a>]</div>
-                </div>
             </div>
 
 
-            <div class="proj">
-                <!-- js will insert img here -->
 
-                <img src="assets/demos/autopac/autopac.png" class="proj_img">
-                <div class="proj_desc">
-                    <h3>AutoPAC - Automatic Plan and Code Synthesis</h3>
-                    <div>
-                        An LLM-based pipeline to apply a idea to resolve challenges in an ML pipeline. AutoPAC models a more realistic setting of incremental development of ML pipelines, resolving the issues in a continual fashion.
-                        <!-- Under review at the 27th International Conference on Discovery Science (DS 2024). -->
-                        <br>
-                        <br>
-                        Supervisors: <a href="https://scholar.google.com.au/citations?user=zpNTeogAAAAJ&hl=en">Prof. Ashwin Srinivasan</a>, <a href="https://scholar.google.co.in/citations?user=f70Rc2wAAAAJ&hl=en">Prof. Gautam Shroff</a> (TCS Research), <a href="https://scholar.google.pt/citations?user=CFkxQ6cAAAAJ&hl=en">Prof. Tanmay Verlekar</a>
-                    </div>
-                    <br>
-                    <div>[<a href="https://drive.google.com/file/d/1QpLhCPE8ZOqzZ1sXsU638UmOWdy8EUmD/view">preprint</a>]</div>
-                </div>
-            </div>
-              
+        <!-- <div id="projs">
+            <h2>Projects </h2>
+
+
 
             <div class="proj">
-                <!-- js will insert img here -->
-                <img src="assets/demos/sd/cherry_blossom.gif" class="proj_img">
+                
                 <div class="proj_desc">
                     <h3>Visualising Image Generation using Stable Diffusion</h3>
                     <div>I implemented the Stable Diffusion paper from scratch (with the help of <a href="https://www.youtube.com/watch?v=ZBKpAp_6TGI">this tutorial</a>),
@@ -164,8 +103,8 @@
                     <div>[<a href="https://github.com/Harshvardhan-Mestha/stable_diffusion_pytorch">repo</a>]</div>
                 </div>
             </div>
+            
             <div class="proj">
-                <img src="assets/demos/xkcd.gif" class="proj_img">
                 <div class="proj_desc">
                     <h3>Relevant XKCD</h3>
                     <div>
@@ -180,7 +119,7 @@
             <div>[<a href="projects/projects.html">more projects</a>]</div>
         </div>
 
-        <hr color="coral" width="100%" height="2px">
+        <hr color="coral" width="100%" height="2px"> -->
 
         <!-- <div id="misc">
             <h3>misc</h3>

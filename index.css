@@ -1,115 +1,274 @@
-body{
+/* Set a base font size for the root element */
+html {
+    font-size: 16px; /* Default base size (can be adjusted for scaling) */
+}
+
+body {
     margin: 0;
-    font-family: Andale Mono, Helvetica,Arial, sans-serif;
+    font-family: Roboto Mono, Arial, sans-serif;
     background-color: rgb(36, 36, 36);
     color: whitesmoke;
+    font-size: 1em; /* Use em for body text */
 }
 
-#header{
+#header {
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    gap: 1vw;
-    padding: 3vw;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    justify-content: flex-end;
+    gap: 1em;
+    padding: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
     margin-right: 0;
     background-color: darkslategrey;
-    padding-left:60vh;
-    padding-right: 10vw;
+    padding-left: 5em;
+    padding-right: 2em;
     border-bottom: 2px solid coral;
+    flex-wrap: wrap;
 }
 
-#header > div > a{
-    font-size: 2.5vh;
-    font-family: Andale Mono, Helvetica,Arial, sans-serif;
-    /* color: lightcyan; */
+#header > div > a {
+    font-size: 1.5em; /* Scales with the root font size */
+    font-family: Andale Mono, Helvetica, Arial, sans-serif;
 }
 
-#dp{
-    height: 25vh;
-    width: 25vh;
-    border-radius: 20vh;
+#dp {
+    height: 15em; /* Scales with the font size */
+    width: 15em;  /* Keeps the aspect ratio */
+    border-radius: 50%; /* Makes it a perfect circle */
     border: 1px solid darkslategray;
 }
 
-#bio{
+#bio {
     display: flex;
-    margin-top: 4vh;
-    gap: 2vw;
+    margin-top: 2em;
+    gap: 2em;
+    flex-direction: row;
 }
 
-#name{
+#name {
     font-weight: bold;
-    font-size: 4vh;
+    font-size: 2em; /* Scales with the root font size */
 }
 
-#bio_desc{
+#bio_desc {
     display: flex;
     flex-direction: column;
-    gap: 3vh;
+    gap: 1.5em; /* Adjust spacing using em */
 }
 
-#news{
+#news {
     display: flex;
     flex-direction: column;
-    margin-bottom: 3vh;
+    margin-bottom: 1.5em; /* Adjust spacing using em */
 }
 
-.proj_img{
-    height: 25vh;
-    width: 25vh;
+.proj_img {
+    height: 15em; /* Adjust image size using em */
+    width: 15em;
     border: 1px solid darkslategray;
     border-radius: 2px;
     background-color: white;
 }
 
-
-
-#main{
-    margin-left: 10vw;
-    margin-right: 10vw;
+#main {
+    margin-left: 10em;
+    margin-right: 10em;
 }
-.news_item{
+
+.news_item {
     display: flex;
     flex-direction: row;
-    gap: 0vh;
+    gap: 0;
+    flex-wrap: wrap;
 }
-.news_item > .date{
-    width: 15vw;
+
+.news_item > .date {
+    width: 10em; /* Adjust width using em */
 }
-ul{
+
+ul {
     list-style-type: "- ";
 }
 
-a:link,a:visited{
+a:link, a:visited {
     text-decoration: none;
     color: lightskyblue;
+    font-size: 1em; /* Uniform scaling for links */
 }
-a:hover{
+
+a:hover {
     color: darkcyan;
     text-decoration: underline;
 }
 
-
-.proj{
+.proj {
     display: flex;
     flex-direction: row;
-    gap: 5vh;
-    
+    gap: 1em; /* Adjust spacing using em */
+    flex-wrap: wrap;
 }
 
-#projs{
+#projs {
     display: flex;
     flex-direction: column;
-    gap: 2vh;
-    padding-bottom: 3vh;
+    gap: 1em;
+    padding-bottom: 2em;
 }
 
-#footer{
-    padding: 5vh;
+#footer {
+    padding: 3em; /* Adjust padding using em */
 }
 
-#current{
+#current {
     color: dodgerblue;
 }
+
+.proj_desc{
+    font-size: 1em; /* Adjust description size using em */
+}
+
+.proj_header {
+    font-size: 1.5em; /* Adjust header size using em */
+    font-weight: bold;
+}
+
+/* Mobile-friendly responsive design */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    #header {
+        padding: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        justify-content: center;
+        gap: 0.5em;
+        flex-wrap: wrap;
+    }
+
+    #header > div > a {
+        font-size: 1.2em;
+    }
+
+    #main {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #bio {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    #dp {
+        height: 12em;
+        width: 12em;
+    }
+
+    #name {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    #bio_desc {
+        text-align: center;
+    }
+
+    .proj {
+        flex-direction: column;
+    }
+
+    .proj_img {
+        height: 12em;
+        width: 12em;
+        margin: 0 auto;
+    }
+
+    .proj_header {
+        font-size: 1.2em;
+    }
+
+    .news_item {
+        flex-direction: column;
+    }
+
+    .news_item > .date {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+
+    #footer {
+        padding: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    #header {
+        padding: 0.75em;
+        gap: 0.3em;
+    }
+
+    #header > div > a {
+        font-size: 1em;
+    }
+
+    #main {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    #name {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #dp {
+        height: 10em;
+        width: 10em;
+        margin: 0 auto;
+    }
+
+    #bio {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5em;
+    }
+
+    #bio > div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bio_desc {
+        text-align: center;
+        width: 100%;
+    }
+
+    .proj_img {
+        height: 10em;
+        width: 10em;
+        margin: 0 auto;
+    }
+
+    .proj {
+        flex-direction: column;
+    }
+
+    #footer {
+        padding: 1em;
+        font-size: 0.9em;
+    }
+}
+
+
