@@ -130,10 +130,10 @@ a:hover {
     font-size: 1em; /* Adjust description size using em */
 }
 
-.proj_header {
-    font-size: 1.5em; /* Adjust header size using em */
+/* .proj_header {
+    font-size: 1.2em; 
     font-weight: bold;
-}
+} */
 
 /* Mobile-friendly responsive design */
 @media (max-width: 768px) {
